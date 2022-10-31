@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"moduleResolution": "node",
+		"declaration": true,
+		"strict": true,
+		"outDir": "dist",
+		"experimentalDecorators": true,
+		"baseUrl": ".",
+		"paths": { "@/*": ["./src/*"] }
+	},
+	"include": ["src"],
+	"reflection": true
+}

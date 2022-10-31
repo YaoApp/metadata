@@ -1,0 +1,31 @@
+{
+      "name": "@yaoapp/metadata",
+      "version": "1.0.0",
+      "description": "metadata of Yao & Xgen for visual programming.",
+      "type": "module",
+      "source": "src/index.ts",
+      "module": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "scripts": {
+            "emit": "./node_modules/.bin/deepkit-type-install",
+            "dev": "rollup --c rollup.config.ts --configPlugin typescript -w",
+            "build": "rollup --c rollup.config.ts --configPlugin typescript",
+            "build:ncc": "tsc && ncc build dist/index.js -o dist"
+      },
+      "keywords": [],
+      "author": "Wendao",
+      "license": "MIT",
+      "dependencies": {
+            "@deepkit/core": "^1.0.1-alpha.75",
+            "@deepkit/type": "^1.0.1-alpha.75",
+            "tslib": "^2.4.0"
+      },
+      "devDependencies": {
+            "@deepkit/type-compiler": "1.0.1-alpha.75",
+            "@rollup/plugin-typescript": "^8.5.0",
+            "rollup": "^3.2.3",
+            "ttypescript": "^1.5.13",
+            "typescript": "4.7.4",
+            "typescript-transform-paths": "^3.4.4"
+      }
+}
