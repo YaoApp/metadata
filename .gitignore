@@ -1,0 +1,35 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+*-debug.log*
+*-error.log
+package-lock.json
+
+# production
+temp
+dist
+/build
+
+# misc
+.DS_Store
+.idea
+.vscode
+.svn
+.yarnrc
+
+# umi
+.umi
+.umi-production
+
+# turbo
+.turbo
+
+# 一些临时文件
+**/.tmp
+**/.umi
+
+# Electron 构建文件
+release
+**/src/main/bundle.js
+**/src/main/bundle.js.map

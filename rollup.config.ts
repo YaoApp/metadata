@@ -10,6 +10,7 @@ export default defineConfig({
 		dir: 'dist',
 		format: 'esm'
 	},
+	external: ['@deepkit/type'],
 	plugins: [
 		typescript({
 			typescript: ttypescript,
