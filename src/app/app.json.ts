@@ -10,11 +10,13 @@ interface Menu {
 		'flows.init.menu'
 	>
 	args: Type<
-		string[],
+		any[],
 		{
 			'zh-CN': '处理器参数'
 			'en-US': 'Process args'
-		}
+		},
+		[],
+		{ useEditor: true; editorHeight: 180 }
 	>
 }
 

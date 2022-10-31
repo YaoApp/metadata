@@ -9,10 +9,11 @@ export interface IComments {
 	'en-US': string
 }
 
-export type Type<Value, Comments extends IComments, Default = null> = {
+export type Type<Value, Comments extends IComments, Default = null, Options = null> = {
 	value: Value
 	comments: Comments
 	default: Default
+	options: Options
 }
 
 export type getType<T> = T extends Type<
