@@ -11,6 +11,7 @@ export type PureType =
 	| 'number'
 	| 'boolean'
 	| 'array'
+	| 'any'
 	| Array<string | number>
 	| Map<string, PureType>
 	| ObjectType
