@@ -45,6 +45,13 @@ export interface AppJson {
 			'en-US': 'App name'
 		}
 	>
+	short: Type<
+		string,
+		{
+			'zh-CN': '简称'
+			'en-US': 'App Short name'
+		}
+	>
 	description: Type<
 		string,
 		{
@@ -57,6 +64,27 @@ export interface AppJson {
 		{
 			'zh-CN': '版本'
 			'en-US': 'App version'
+		}
+	>
+	xgen: Type<
+		'1.0' | 'deprecated',
+		{
+			'zh-CN': 'xgen版本'
+			'en-US': 'XGen version'
+		}
+	>
+	adminRoot: Type<
+		string,
+		{
+			'zh-CN': '管理后台路径前缀'
+			'en-US': 'Admin path'
+		}
+	>
+	setup: Type<
+		string,
+		{
+			'zh-CN': '初始化脚本'
+			'en-US': 'Setup script'
 		}
 	>
 	logo: Type<
