@@ -1,9 +1,10 @@
 import { IComments } from '@/utils'
 
-type ObjectType = {
+export type ObjectType = {
 	value: PureType
 	comments: IComments
 	default: string | number | boolean | Array<string | number>
+	options: Record<string, any>
 }
 
 export type PureType =
