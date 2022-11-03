@@ -49,8 +49,8 @@ export interface Env {
 		{
 			'zh-CN': '日志格式'
 			'en-US': 'Log format'
-            },
-            'TEXT'
+		},
+		'TEXT'
 	>
 	YAO_JWT_SECRET: Type<
 		string,
@@ -64,6 +64,13 @@ export interface Env {
 		{
 			'zh-CN': '会话数据存储方式'
 			'en-US': 'Session storage way'
+		}
+	>
+	_extends: Type<
+		string,
+		{
+			'zh-CN': '自定义配置项'
+			'en-US': 'Custom config'
 		}
 	>
 }
