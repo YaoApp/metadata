@@ -16,7 +16,13 @@ export type Type<Value, Comments extends IComments, Default = null, Options = nu
 	options: Options
 }
 
-export type getType<T> = T extends Type<infer Value, infer Comments extends IComments, infer Default> ? (Value extends Object ? Pure<Value> : Value) : T extends Object ? Pure<T> : T
+export type getType<T> = T extends Type<infer Value, infer Comments extends IComments, infer Default>
+	? Value extends Object
+		? Pure<Value>
+		: Value
+	: T extends Object
+	? Pure<T>
+	: T
 
 export type Pure<Object> = {
 	[Key in keyof Object]: getType<Object[Key]>
