@@ -1,42 +1,5 @@
 import { Pure, Type } from '@/utils'
 
-interface Menu {
-	process: Type<
-		string,
-		{
-			'zh-CN': '初始化菜单的处理器'
-			'en-US': 'Process for initializing menus'
-		},
-		'flows.init.menu'
-	>
-	args: Type<
-		any[],
-		{
-			'zh-CN': '处理器参数'
-			'en-US': 'Process args'
-		}
-	>
-}
-
-interface Optional {
-	hideNotification: Type<
-		boolean,
-		{
-			'zh-CN': '隐藏侧边栏消息按钮'
-			'en-US': 'Hide sidebar message button'
-		},
-		true
-	>
-	hideSetting: Type<
-		boolean,
-		{
-			'zh-CN': '隐藏侧边栏设置按钮'
-			'en-US': 'Hide sidebar settings button'
-		},
-		false
-	>
-}
-
 export interface AppJson {
 	name: Type<
 		string,
@@ -125,3 +88,40 @@ export interface AppJson {
 }
 
 export type PureAppJson = Pure<AppJson>
+
+interface Menu {
+	process: Type<
+		string,
+		{
+			'zh-CN': '初始化菜单的处理器'
+			'en-US': 'Process for initializing menus'
+		},
+		'flows.init.menu'
+	>
+	args: Type<
+		any[],
+		{
+			'zh-CN': '处理器参数'
+			'en-US': 'Process args'
+		}
+	>
+}
+
+interface Optional {
+	hideNotification: Type<
+		boolean,
+		{
+			'zh-CN': '隐藏侧边栏消息按钮'
+			'en-US': 'Hide sidebar message button'
+		},
+		true
+	>
+	hideSetting: Type<
+		boolean,
+		{
+			'zh-CN': '隐藏侧边栏设置按钮'
+			'en-US': 'Hide sidebar settings button'
+		},
+		false
+	>
+}
